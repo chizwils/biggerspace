@@ -1,0 +1,220 @@
+body{
+	font-size: 13px;
+}
+main{
+	min-height: 100vh;
+}
+.cta{
+	background-color: transparent;
+	border: 1px solid gold;
+	color: black;
+	width: 100px;
+}
+.cta:hover, .sidenav .cta:hover{
+	background-color: transparent!important;
+}
+.btn{
+	background: transparent;
+	border: 1px solid darkblue;
+	color: black;
+	border-radius: 5px;
+		
+	
+}
+.btn:hover{
+	background-color: darkblue;
+	color: white;
+}
+/*****************************HEADER*********************/
+/********NAV********/
+nav{
+	box-shadow: none;
+	background-color: transparent;
+	height: 10vh;
+	padding-top:0.5%; 
+}
+nav li a, .sidenav a{
+	color: black;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	font-weight: 500;
+	
+}
+.header-intro{
+	height: 80vh;
+	
+}
+
+.desc{
+	transform: translate(0, 50%);
+}
+.desc h1{
+	font-size: 4em;
+}
+ p, li{
+	font-size: 1.5em
+}
+.all-border{
+	border: 1em solid blue;
+	height: 300px;
+	width: 60%;
+	position: absolute;
+	top:-10%;
+	right: -30%;
+	z-index: -3;
+		
+}
+.section-title-desc{
+	margin-bottom: 1%;
+}
+.full-rectangle-bottom-right{
+	height: 80%;
+	width: 50%;
+	position: absolute;
+	top:80%;
+	right: -20%;
+	background-color: blue;
+	z-index: -3;
+}
+.full-rectangle{
+	height: 70%;
+	width: 50%;
+	position: absolute;
+	top:-10%;
+	left: -30%;
+	background-color: blue;
+	z-index: -3;
+}
+
+.gallery img{
+	width: inherit;
+}
+.img-container{
+	position: relative;
+	width: 600px;
+	margin: 2% 0 2% 0;
+	
+		
+}
+.img-caption{
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	padding: 1em
+}
+
+.sidenav{
+	background-color: transparent;
+}
+.sidenav a {
+	color: white!important;
+}
+.sidenav-trigger{
+	color: gold;
+}
+
+
+header{
+	height: 100vh;
+	position: relative;
+	background-image: url(../img/Artboard%201.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+
+}
+.image-fit{
+	
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	
+}
+.brand-logo img{
+	height: 80px;
+	
+	
+}
+.logo-intro{
+	position: absolute;
+	bottom: 10%;
+	height: 80vh;
+	left:32%;
+}
+#scroll-down{
+	position:absolute;
+	bottom: 0;
+	left:50%;
+	color: white;
+}
+/****** MAIN ********/
+.section-content {
+	font-size: 2rem;
+	font-family: 'Amiri', serif;
+}
+.section-title{
+	
+}
+.service .section-content td{
+	font-size: 1.5rem;
+}
+.itallic{
+	font-style: italic;
+	
+}
+.contact h3 {
+	font-size: 2.5rem;
+	letter-spacing: 3px;
+}
+.contact p{
+	font-size: 1.5rem;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+.box:nth-child(1){
+	grid-column: span 2;
+}
+.box:nth-child(3){
+	grid-column: span 3;
+}
+.box:nth-child(3){
+	background-image: url(../img/1.jpg);
+}
+.box img{
+	width: 100%;
+	height: auto;
+	
+	
+}
+.social::after{
+	content: '';
+	width: 100px;
+	border-bottom: 1px solid red;
+}
+.social img{
+	width:30px;
+	fill: #a67c00;
+}
+/******FOOTER*********/
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	.logo-intro{
+	position: absolute;
+	bottom: 30%;
+	height: 55vh;
+left: 5%;
+}
+} 
+
