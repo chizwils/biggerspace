@@ -3,6 +3,8 @@ body{
 }
 main{
 	min-height: 100vh;
+	
+	z-index: -100;
 }
 .cta{
 	background-color: transparent;
@@ -45,16 +47,44 @@ nav li a, .sidenav a{
 	height: 80vh;
 	
 }
+h1,h2,h3,h4,h5{
+	font-family: 'Rozha One', serif;
+	color: #222222;
+}
 
 .desc{
 	transform: translate(0, 50%);
 }
 .desc h1{
 	font-size: 4em;
+	margin-bottom: 5vh;
+}
+.desc p{
+	margin-bottom: 3vh;
 }
  p, li{
-	font-size: 1.5em
+	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	color: #484848;
+	line-height: 22px;
+	letter-spacing: 0.026em;
 }
+.features ul {
+	list-style: none; 
+	margin-top: 1em;
+}
+  
+.features ul li::before {
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color:blue; /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */ 
+	width: 1em; /* Also needed for space (tweak if needed) */
+	margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  .features li{
+	  padding: 1em;
+  }
 .all-border{
 	border: 1em solid blue;
 	height: 300px;
@@ -92,6 +122,7 @@ nav li a, .sidenav a{
 
 .gallery img{
 	width: inherit;
+	border-radius: 10px;
 }
 .img-container{
 	position: relative;
@@ -101,10 +132,26 @@ nav li a, .sidenav a{
 		
 }
 .img-caption{
-	width: 50%;
+	width: 60%;
 	position: absolute;
 	bottom: 0;
-	padding: 1em
+	padding: 1em;
+
+}
+.img-caption p{
+	font-weight: 700;
+	font-size: 2em;
+	line-height: 1em;
+	color:darkblue;
+	
+}
+.shadow{
+	position: relative;
+}
+.border{
+position: absolute;
+background-color: blue;
+width: 100px;
 }
 .details img{
 	height: 100px;
